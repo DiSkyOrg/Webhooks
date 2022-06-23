@@ -39,4 +39,8 @@ command webhooks:
             
             # OPTIONAL: Use the 'retrieve message' effect from DiSky in order to get an actual Message.
             send "Message id: %{_msgId}%" to console
-``
+```
+
+### Results:
+
+![Results](https://media.discordapp.net/attachments/491994251341856779/989619417409282148/unknown.png)
