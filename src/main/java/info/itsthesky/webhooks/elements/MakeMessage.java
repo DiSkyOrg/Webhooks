@@ -49,7 +49,7 @@ public class MakeMessage extends EffectSection {
 
     @Override
     protected @Nullable TriggerItem walk(@NotNull Event e) {
-        return getNext();
+        return walk(e, true);
     }
 
     @Override

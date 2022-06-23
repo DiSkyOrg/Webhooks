@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public class BuilderMessage extends WebhookExpression<String> {
 
 	static {
-		register(BuilderMessage.class, String.class, "message");
+		register(BuilderMessage.class, String.class, "content");
 	}
 
 	@Override

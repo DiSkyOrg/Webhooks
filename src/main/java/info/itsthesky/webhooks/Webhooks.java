@@ -2,6 +2,7 @@ package info.itsthesky.webhooks;
 
 
 import ch.njol.skript.SkriptAddon;
+import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import info.itsthesky.disky.DiSky;
 import info.itsthesky.disky.api.modules.DiSkyModule;
 
@@ -25,6 +26,7 @@ public final class Webhooks extends DiSkyModule {
 
         try {
             loadClasses("info.itsthesky.webhooks.elements");
+            registerType(WebhookMessageBuilder.class, "webhookmessage", builder -> "webhook message builder");
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }

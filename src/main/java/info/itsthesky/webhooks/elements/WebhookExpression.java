@@ -13,7 +13,7 @@ import java.lang.reflect.ParameterizedType;
 public abstract class WebhookExpression<T> extends SimplePropertyExpression<WebhookMessageBuilder, T> {
 
 	public static <T, E extends WebhookExpression<T>> void register(Class<E> expr, Class<T> type, String name) {
-		register(expr, type, "webhook "+name, "webhookbuilder");
+		register(expr, type, "webhook "+name, "webhookmessage");
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public abstract class WebhookExpression<T> extends SimplePropertyExpression<Webh
 	@SuppressWarnings("unchecked")
 	public @NotNull Class<? extends T> getReturnType() {
 		return ((Class<T>) ((ParameterizedType) getClass()
-				.getGenericSuperclass()).getActualTypeArguments()[1]);
+				.getGenericSuperclass()).getActualTypeArguments()[0]);
 	}
 
 	@Override

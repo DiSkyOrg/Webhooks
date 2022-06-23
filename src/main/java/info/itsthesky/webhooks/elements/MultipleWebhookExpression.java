@@ -13,7 +13,7 @@ import java.lang.reflect.ParameterizedType;
 public abstract class MultipleWebhookExpression<T> extends MultiplyPropertyExpression<WebhookMessageBuilder, T> {
 
 	public static <T, E extends MultipleWebhookExpression<T>> void register(Class<E> expr, Class<T> type, String name) {
-		register(expr, type, "webhook "+name, "webhookbuilder");
+		register(expr, type, "webhook "+name, "webhookmessage");
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public abstract class MultipleWebhookExpression<T> extends MultiplyPropertyExpre
 		final WebhookMessageBuilder builder = EasyElement.parseSingle(getExpr(), e, null);
 		if (builder == null)
 			return;
-		change(mode, (T[]) delta[0], builder);
+		change(mode, (T[]) delta, builder);
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public abstract class MultipleWebhookExpression<T> extends MultiplyPropertyExpre
 	@SuppressWarnings("unchecked")
 	public @NotNull Class<? extends T> getReturnType() {
 		return ((Class<T>) ((ParameterizedType) getClass()
-				.getGenericSuperclass()).getActualTypeArguments()[1]);
+				.getGenericSuperclass()).getActualTypeArguments()[0]);
 	}
 
 	@Override
