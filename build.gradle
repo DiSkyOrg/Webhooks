@@ -11,15 +11,18 @@ repositories {
     maven { url = 'https://repo.papermc.io/repository/maven-public/' }
     maven { url = 'https://oss.sonatype.org/content/groups/public/' }
     maven { url = 'https://jitpack.io/' }
+    maven { url = 'https://m2.dv8tion.net/releases' }
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:23.0.0'
     shadow 'com.destroystokyo.paper:paper-api:1.13-R0.1-SNAPSHOT'
     shadow 'com.github.DiSkyOrg:DiSky:4.0.1'
     shadow 'com.github.DiSkyOrg:DiSky:4.0.1'
     shadow 'com.github.SkriptLang:Skript:2.6.1'
-    shadow 'com.github.MinnDevelopment:discord-webhooks:0.2.0'
+    shadow 'club.minnced:discord-webhooks:0.7.2'
+
+    shadow 'net.dv8tion:JDA:5.0.0-alpha.12'
 }
 
 def targetJavaVersion = 8
