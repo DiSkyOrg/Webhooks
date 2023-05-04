@@ -5,6 +5,7 @@ import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import info.itsthesky.webhooks.elements.WebhookExpression;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,6 +13,7 @@ import org.jetbrains.annotations.NotNull;
 @Description({"Change the tts state of any webhook message builder.",
 "If enabled, Discord will read the message aloud to the user."})
 @Examples("set webhook tts of builder to true")
+@Module("Webhooks")
 public class BuilderTTS extends WebhookExpression<Boolean> {
 
 	static {

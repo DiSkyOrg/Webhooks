@@ -7,6 +7,7 @@ import ch.njol.skript.doc.Name;
 import club.minnced.discord.webhook.send.WebhookEmbed;
 import club.minnced.discord.webhook.send.WebhookEmbedBuilder;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import info.itsthesky.webhooks.elements.MultipleWebhookExpression;
 import net.dv8tion.jda.api.EmbedBuilder;
 import org.jetbrains.annotations.NotNull;
@@ -17,6 +18,7 @@ import java.util.stream.Stream;
 @Description("Change the embeds of any webhook message builder.")
 @Examples({"set webhook embeds of builder to last embed builder",
 "add last embed builder to webhook embeds of builder"})
+@Module("Webhooks")
 public class BuilderEmbeds extends MultipleWebhookExpression<EmbedBuilder> {
 
 	static {

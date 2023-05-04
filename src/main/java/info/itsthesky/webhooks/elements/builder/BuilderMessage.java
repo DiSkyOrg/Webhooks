@@ -5,12 +5,14 @@ import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import info.itsthesky.webhooks.elements.WebhookExpression;
 import org.jetbrains.annotations.NotNull;
 
 @Name("Builder Content")
 @Description("Change the content of any webhook message builder.")
 @Examples("set webhook content of builder to \"Here's some text\"")
+@Module("Webhooks")
 public class BuilderMessage extends WebhookExpression<String> {
 
 	static {

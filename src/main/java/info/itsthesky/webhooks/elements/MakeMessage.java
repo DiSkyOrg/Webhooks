@@ -8,6 +8,7 @@ import ch.njol.skript.doc.Name;
 import ch.njol.skript.lang.*;
 import ch.njol.util.Kleenean;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
 
@@ -21,6 +22,7 @@ import java.util.List;
         "\tset webhook name of builder to \"avatar url\"",
         "\tset webhook content of builder to \"Here's some text\""
 })
+@Module("Webhooks")
 public class MakeMessage extends EffectSection {
 
     static {

@@ -9,6 +9,7 @@ import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import org.bukkit.event.Event;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,6 +18,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 @Name("Webhook Message Builder")
 @Description("The current webhook message builder from the current 'make message' scope.")
+@Module("Webhooks")
 public class MessageBuilder extends SimpleExpression<WebhookMessageBuilder> {
 
     static {

@@ -9,6 +9,7 @@ import ch.njol.skript.lang.Variable;
 import ch.njol.util.Kleenean;
 import club.minnced.discord.webhook.WebhookClient;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import info.itsthesky.disky.api.skript.WaiterEffect;
 import info.itsthesky.webhooks.Webhooks;
 import org.bukkit.event.Event;
@@ -20,6 +21,7 @@ import org.jetbrains.annotations.Nullable;
 "Don't forget to register the client before, then use the registered name on this effect.",
 "The builder have to be made through a webhook message builder section! This effect should also be inside the section.",
 "Because of Discord's limitation, you can only get back the message's ID. You have to retrieve it through DiSky's retrieve message effect."})
+@Module("Webhooks")
 public class MakeClientSend extends WaiterEffect<String> {
 
 	static {

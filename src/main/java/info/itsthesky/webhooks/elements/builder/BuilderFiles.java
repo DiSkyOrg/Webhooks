@@ -6,6 +6,7 @@ import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;
 import ch.njol.skript.doc.Name;
 import club.minnced.discord.webhook.send.WebhookMessageBuilder;
+import info.itsthesky.disky.api.generator.Module;
 import info.itsthesky.webhooks.elements.MultipleWebhookExpression;
 import org.jetbrains.annotations.NotNull;
 
@@ -15,6 +16,7 @@ import java.io.File;
 @Description("Change the files of any webhook message builder.")
 @Examples({"set webhook files of builder to \"file/path\"",
 "add \"file/path\" to webhook files of builder"})
+@Module("Webhooks")
 public class BuilderFiles extends MultipleWebhookExpression<String> {
 
 	static {

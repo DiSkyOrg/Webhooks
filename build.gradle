@@ -16,11 +16,10 @@ repositories {
 
 dependencies {
     implementation 'org.jetbrains:annotations:23.0.0'
-    implementation 'club.minnced:discord-webhooks:0.8.0'
+    implementation 'club.minnced:discord-webhooks:0.8.2'
 
     shadow 'com.destroystokyo.paper:paper-api:1.13-R0.1-SNAPSHOT'
-    shadow 'com.github.DiSkyOrg:DiSky:4.0.1'
-    shadow 'com.github.DiSkyOrg:DiSky:4.0.1'
+    shadow 'com.github.DiSkyOrg:DiSky:c621912'
     shadow 'com.github.SkriptLang:Skript:2.6.1'
 
     shadow 'net.dv8tion:JDA:5.0.0-alpha.12'
