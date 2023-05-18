@@ -46,7 +46,7 @@ public class MakeClientSend extends WaiterEffect<String> {
 	public void runEffect(Event e) {
 		final String name = parseSingle(exprName, e, null);
 		final WebhookMessageBuilder builder = parseSingle(exprBuilder, e, null);
-		if (anyNull(name, builder))
+		if (anyNull(this, name, builder))
 			return;
 
 		final WebhookClient client = Webhooks.getManager().getClient(name);

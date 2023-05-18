@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'info.itsthesky'
-version = '1.0'
+version = '1.0.2'
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ dependencies {
     implementation 'club.minnced:discord-webhooks:0.8.2'
 
     shadow 'com.destroystokyo.paper:paper-api:1.13-R0.1-SNAPSHOT'
-    shadow 'com.github.DiSkyOrg:DiSky:c621912'
+    shadow 'com.github.DiSkyOrg:DiSky:2ca703f'
     shadow 'com.github.SkriptLang:Skript:2.6.1'
 
     shadow 'net.dv8tion:JDA:5.0.0-alpha.12'
